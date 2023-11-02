@@ -47,18 +47,25 @@ document.getElementById('switch').addEventListener("click",f1)
     }
     document.getElementById('btn').addEventListener("click", f2)
     function f2(){
-        // alert('ggg');
-        document.getElementById('big-box1').style.height='auto';
-        document.getElementById('btn').style.display='none';
-        document.getElementById('btn1').style.display='block';
-
+        document.getElementById('btn-div').style.display="none";
+        document.getElementById('btn-div1').style.display="block";
+        const a =document.querySelectorAll('.hidden');
+        for(i=0;i<a.length;i++)
+        {
+            a[i].style.display="block";
+            a[i].style.display="flex";
+        }
     }
     document.getElementById('btn1').addEventListener("click", f3)
     function f3(){
-        // alert('ggg');
-        document.getElementById('big-box1').style.height='275vh';
-        document.getElementById('btn').style.display='block';
-        document.getElementById('btn1').style.display='none';
+        document.getElementById('btn-div').style.display="block";
+        document.getElementById('btn-div1').style.display="none";
+        const a =document.querySelectorAll('.hidden');
+        for(i=0;i<a.length;i++)
+        {
+            a[i].style.display="none";
+            a[i].style.display="flex";
+        }
     }
     document.getElementById('btn-project').addEventListener("click", f4)
     function f4(){
