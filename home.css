@@ -18,6 +18,8 @@ body {
     /* background-color: #171c28; */
     font-family: sans-serif;
     color: white;
+    overflow: hidden;
+    /* width: 100vw; */
     padding-bottom: 20px;
     scroll-behavior: smooth;
 }
@@ -28,9 +30,9 @@ header {
     align-items: center;
     flex-wrap: wrap;
     position: fixed;
-    background-color: rgb(6, 4, 18);
+    /* background-color: rgb(6, 4, 18); */
     /* background-color: yellow; */
-    width: 100%;
+    width: 100vw;
     padding-top: 20px;
     height: 70px;
     z-index: 3;
@@ -44,10 +46,10 @@ header {
 .navs {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     background-color: rgb(6, 4, 18);
-    width: 100%;
-    position: absolute;
+    width: 100vw;
+    position: absolute; 
     top: -100px;
     transition: 1s;
     height: 70px;
@@ -61,7 +63,7 @@ header {
     /* background-color: blue; */
     transition: all 0.3s ease;
     color: white;
-    width: 50%;
+    width: 100%;
     opacity: 90%;
 }
 
@@ -71,7 +73,7 @@ header {
 .other-navbar{
     display: flex;
     /* background-color: yellowgreen; */
-    width: 50%;
+    width: 100%;
     height: 70px;
 }
 .nav {
@@ -115,7 +117,7 @@ header {
 .menu-icon>span {
     font-size: 3em;
     position: absolute;
-    right: 20px;
+    right: 30px;
     top: 1px;
     cursor: pointer;
     display: none;
@@ -235,14 +237,19 @@ header {
     color: black;
 }
 
+/* ------------------Hero Section--------------------------- */
+
 .hero-section {
     width: 100%;
+    /* background-color: aqua  ; */
     margin-top: 70px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     transition: all 2s ease;
 }
+
+/* ----------------------Hero Section Desription------------------------------ */
 
 .hero-section>.des {
     align-items: center;
@@ -324,10 +331,14 @@ header {
     transform: translateY(-10px)
 }
 
+/* ------------------------Hero section Image----------------------- */
+
 .hero-section-image>img {
     width: 400px;
     height: 400px;
 }
+
+/* -----------------------Scroll to top------------------- */
 
 #scroll {
     position: fixed;
@@ -348,11 +359,15 @@ header {
     filter: drop-shadow(blue 10px 20px 30px);
 }
 
+/* --------------------About Profile-------------------------------- */
+
 .about-myself {
     margin: auto;
-    margin-left: 70px;
+    padding-left: 70px;
     margin-top: 5vh;
+    /* background-color: aqua; */
     font-weight: bolder;
+    transition: 0.3s;
 }
 
 .profile-summary>h1 {
@@ -369,16 +384,22 @@ header {
     padding-right: 80px;
 }
 
+/* --------------------------What i do description------------------- */
+
 .what-i-do {
     margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .what-i-do-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
-    height: 500px;
+    height: 350px;
     /* background-color: aqua; */
 }
 
@@ -390,18 +411,25 @@ header {
 }
 
 .what-i-do-text {
-    /* margin-top: 20px; */
-    width: 40%;
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* background-color: aquamarine; */
 }
 
 .what-i-do-text>h1 {
-    font-size: 1.9em;
+    font-size: 1.7em;
 }
 
 .what-i-do-text>p {
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
+
+/* ------------------------My Skills------------------------- */
 
 .my-skill {
     margin: auto;
@@ -425,13 +453,7 @@ header {
     text-decoration: underline red;
 }
 
-/* .big-box {
-    display: flex;
-    height: auto;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-} */
+/* -------------------My skill Div---------------------- */
 
 .big-box1 {
     /* background-color: aqua; */
@@ -473,7 +495,7 @@ header {
     width: 100px;
 }
 
-/* ------------------button---------------------- */
+/* ------------------Skill button---------------------- */
 
 #btn-div {
     text-align: center;
@@ -507,7 +529,7 @@ header {
     cursor: pointer;
     display: flex;
     padding: 6px;
-    background-color: #b1a9b9;
+    background-color: #55198b;
 }
 
 #btn:hover {
@@ -527,7 +549,7 @@ header {
     border-radius: 20px;
     cursor: pointer;
     padding: 6px;
-
+    background-color: #55198b;
 }
 
 #btn1:hover {
@@ -535,7 +557,8 @@ header {
     transform: translateY(-5px);
 }
 
-/* ------------------------------ */
+/* ----------------------My project------------------------- */
+
 .my-project {
     margin: auto;
     margin-left: 30px;
@@ -558,22 +581,13 @@ header {
     text-decoration: underline red;
 }
 
-.project-box {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .project-box1 {
-    /* background-color: aqua; */
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    /* width: 100vw; */
     justify-content: space-evenly;
-    filter: drop-shadow(2px 2px 3px blue);
-    /* margin-left: 50px;
-    margin-right: 80px; */
+    /* background-color: aqua; */
 }
 
 .project-box1>div {
@@ -588,59 +602,21 @@ header {
     align-items: center;
     flex-direction: column;
     background: url(Images/screenshot.png);
-    /* margin-left: 35px; */
     background-size: contain;
+    filter: drop-shadow(2px 2px 3px blue);
     background-repeat: repeat;
     overflow: hidden;
 }
 
 .project-box1>div:hover {
-    /* background-color: rgb(185, 185, 16); */
     transform: scale(1.1);
     filter: drop-shadow(2px 2px 4px blue);
 }
 
-#btn-project {
-    width: 80px;
-    background-color: #55198b;
-    transition: all 0.3s ease;
-    height: 30px;
-    border: none;
-    font-weight: bold;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-right: 10px;
-    display: none;
-    cursor: pointer;
-}
+
 
 .project-box1-slide {
-    /* filter: drop-shadow(2px 2px 4px rgb(214, 41, 32)); */
     filter: drop-shadow(3px 3px 4px blue);
-}
-
-#btn-project:hover {
-    background-color: white;
-    transform: translateY(-5px);
-}
-
-#btn1-project {
-    width: 80px;
-    background-color: #55198b;
-    transition: all 0.3s ease;
-    height: 30px;
-    border: none;
-    font-weight: bold;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    display: none;
-}
-
-#btn1-project:hover {
-    background-color: white;
-    transform: translateY(-5px);
 }
 
 .project-hover {
@@ -679,24 +655,88 @@ header {
     transition: 0.5s;
 }
 
+/* ------------------button project------------------------- */
+
+#btn-project-div{
+    background: url();
+    box-shadow: none;
+    background-color: rgb(6, 4, 18);
+    filter: drop-shadow(0px 0px 0px rgb(6, 4, 18));
+    height: 50px;
+    padding: auto;
+    display: none;
+    margin-top: 25px;
+    /* background-color: aqua; */
+}
+
+#btn-project-div1{
+    display: flex;
+    justify-content: center;
+    background: url();
+    box-shadow: none;
+    background-color: rgb(6, 4, 18);
+    filter: drop-shadow(0px 0px 0px rgb(6, 4, 18));
+    height: 50px;
+    margin-top: 25px;
+    /* background-color: aqua; */
+    display: none;
+}
+#btn-project {
+    margin: auto;
+    width: 80px;
+    transition: all 0.3s ease;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    padding: 6px;
+    background-color: #55198b;
+}
+#btn-project:hover {
+    background-color: white;
+    transform: translateY(-5px);
+}
+#btn1-project {
+    margin: auto;
+    width: 80px;
+    transition: all 0.3s ease;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    display: flex;
+    padding: 6px;
+    background-color: #55198b;
+}
+
+#btn1-project:hover {
+    background-color: white;
+    transform: translateY(-5px);
+}
+
+/* ---------------------Footer------------------------ */
+
 #footer-main {
     display: flex;
 }
 
 footer {
     width: 90%;
-    /* height: 30vh; */
     display: flex;
     margin: auto;
-    /* position: absolute; */
     padding-top: 40px;
+    /* background-color: aqua; */
 }
 
 .footer-left {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #55198b; */
     width: 30%;
 }
 
@@ -779,10 +819,6 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    flex-wrap: wrap;
     font-weight: bold;
 }
-
-/* .project-display-slide{
-    display: block;
-} */
