@@ -8,18 +8,14 @@ html,
 body {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
-    /* overflow: hidden; */
     background-color: rgb(6, 4, 18);
 }
 
 .main {
-    /* background-color: #ECE2DO; */
     background-color: rgb(6, 4, 18);
-    /* background-color: #171c28; */
     font-family: sans-serif;
     color: white;
     overflow: hidden;
-    /* width: 100vw; */
     padding-bottom: 20px;
     scroll-behavior: smooth;
 }
@@ -30,8 +26,6 @@ header {
     align-items: center;
     flex-wrap: wrap;
     position: fixed;
-    /* background-color: rgb(6, 4, 18); */
-    /* background-color: yellow; */
     width: 100vw;
     padding-top: 20px;
     height: 70px;
@@ -46,21 +40,18 @@ header {
 .navs {
     display: flex;
     justify-content: space-evenly;
-    /* flex-wrap: nowrap; */
     background-color: rgb(6, 4, 18);
     width: 100vw;
     position: absolute; 
     top: -100px;
     transition: 1s;
     height: 70px;
-    /* margin-bottom: 200px; */
 }
 
 .my-name {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: blue; */
     transition: all 0.3s ease;
     color: white;
     width: 100%;
@@ -72,17 +63,12 @@ header {
 }
 .other-navbar{
     display: flex;
-    /* background-color: yellowgreen; */
     width: 100%;
     height: 70px;
 }
 .nav {
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     flex-wrap: wrap;
-    /* background-color: brown; */
-    /* margin-left: auto; */
     position: absolute;
     top: 20px;
     right: 100px;
@@ -95,7 +81,6 @@ header {
 }
 
 .nav>li>a {
-    /* color: white; */
     text-decoration: none;
     font-size: 1.25em;
     padding-left: 20px;
@@ -106,19 +91,21 @@ header {
     color: #55198b;
     border-radius: 20px;
     transition: all 0.3s ease;
-    /* font-weight: bolder; */
 }
 
 .nav>li>a:hover {
     background-color: #55198b;
     color: white;
 }
-
+/* .menu-icon{
+    margin-right: 10px;
+    background-color: aqua;
+} */
 .menu-icon>span {
     font-size: 3em;
     position: absolute;
     right: 30px;
-    top: 1px;
+    /* top: 1px; */
     cursor: pointer;
     display: none;
 }
@@ -128,12 +115,9 @@ header {
     background-color: white;
     opacity: 0.8;
     width: 100%;
-    /* height: 200px; */
     position: fixed;
     transition: all 1s ease;
     overflow: hidden;
-    /* padding-top: 10px; */
-    /* display: none; */
     top: -210px;
     z-index: 2;
 }
@@ -143,13 +127,9 @@ header {
 }
 
 .menu-nav>li {
-    /* padding-bottom: 10px; */
     font-size: 1.2em;
     font-weight: bolder;
     list-style-type: none;
-    /* position: absolute;
-    top: 2px; */
-    /* transition: 4s; */
 }
 
 .menu-nav>li>a {
@@ -182,7 +162,7 @@ header {
     height: 25px;
     width: 50px;
     position: absolute;
-    right: 20px;
+    right: 30px;
     top: 19px;
 }
 
@@ -190,16 +170,12 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* top: 20px; */
     border-radius: 20px;
     border: 1.5px solid red;
     height: 23px;
     width: 45px;
-    /* position: absolute; */
     cursor: pointer;
-    /* right: 20px; */
     background-color: rgb(253, 249, 249);
-    /* overflow: hidden; */
 }
 
 #slide {
@@ -223,14 +199,10 @@ header {
 
 .color-slide {
     color: black;
-    /* background-color: aqua; */
 }
 
 .bg-color {
-    /* background-color: rgb(7, 7, 82); */
     background-color: rgb(141, 209, 245);
-    /* background-color: white; */
-    /* background-color: #55198b; */
 }
 
 .color-switch {
@@ -241,7 +213,6 @@ header {
 
 .hero-section {
     width: 100%;
-    /* background-color: aqua  ; */
     margin-top: 70px;
     display: flex;
     justify-content: space-evenly;
@@ -260,7 +231,6 @@ header {
     width: 350px;
     height: 350px;
     overflow: hidden;
-    /* background-color: aqua; */
 }
 
 .des h1 {
@@ -272,7 +242,6 @@ header {
 }
 
 .des>h2 {
-    /* opacity: 90%; */
     color: #55198b;
     margin-left: 350px;
     transition: all 3s ease;
@@ -299,7 +268,6 @@ header {
     padding-right: 15px;
     border: none;
     border-radius: 5px;
-    /* background-color: #55198b; */
     background-color: #55198b;
     cursor: pointer;
     transition: all .7s ease;
@@ -365,7 +333,6 @@ header {
     margin: auto;
     padding-left: 70px;
     margin-top: 5vh;
-    /* background-color: aqua; */
     font-weight: bolder;
     transition: 0.3s;
 }
@@ -400,12 +367,9 @@ header {
     align-items: center;
     width: 50%;
     height: 350px;
-    /* background-color: aqua; */
 }
 
 .what-i-do-image>img {
-    /* width: 50%; */
-    /* margin-top: -60px; */
     width: 500px;
     height: 500px;
 }
@@ -418,7 +382,6 @@ header {
     width: 50%;
     padding-left: 25px;
     padding-right: 25px;
-    /* background-color: aquamarine; */
 }
 
 .what-i-do-text>h1 {
@@ -456,14 +419,11 @@ header {
 /* -------------------My skill Div---------------------- */
 
 .big-box1 {
-    /* background-color: aqua; */
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     height: auto;
     justify-content: space-evenly;
-    /* margin-left: 50px;
-    margin-right: 80px; */
 }
 
 .big-box1 div {
@@ -478,14 +438,11 @@ header {
     align-items: center;
     flex-direction: column;
     filter: drop-shadow(2px 2px 3px blue);
-    /* margin-left: 35px; */
 }
 
 .big-box1>div:hover {
-    /* background-color: rgb(185, 185, 16); */
     transform: scale(1.1);
-    filter: drop-shadow(2px 2px 4px blue);
-    /* filter: drop-shadow(blue 10px 20px 30px); */
+    filter: drop-shadow(2px 2px 5px blue);
 
 }
 
@@ -504,8 +461,6 @@ header {
     box-shadow: none;
     background-color: rgb(6, 4, 18);
     filter: drop-shadow(0px 0px 0px rgb(6, 4, 18));
-    /* background-color: violet; */
-
 }
 
 #btn-div1 {
@@ -514,7 +469,6 @@ header {
     box-shadow: none;
     background-color: rgb(6, 4, 18);
     filter: drop-shadow(0px 0px 0px rgb(6, 4, 18));
-    /* background-color: violet; */
 }
 
 #btn {
@@ -529,6 +483,8 @@ header {
     cursor: pointer;
     display: flex;
     padding: 6px;
+    padding-left: 8px;
+    padding-top: 7px;
     background-color: #55198b;
 }
 
@@ -549,6 +505,8 @@ header {
     border-radius: 20px;
     cursor: pointer;
     padding: 6px;
+    padding-left: 8px;
+    padding-top: 7px;
     background-color: #55198b;
 }
 
@@ -585,9 +543,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    /* width: 100vw; */
     justify-content: space-evenly;
-    /* background-color: aqua; */
 }
 
 .project-box1>div {
@@ -632,8 +588,6 @@ header {
     overflow: hidden;
     transform: translateY(-300px);
     background-color: rgb(248, 238, 238);
-    /* z-index: 1; */
-    /* transition: 0.5s; */
 }
 
 .project-hover>p {
@@ -666,7 +620,6 @@ header {
     padding: auto;
     display: none;
     margin-top: 25px;
-    /* background-color: aqua; */
 }
 
 #btn-project-div1{
@@ -678,7 +631,6 @@ header {
     filter: drop-shadow(0px 0px 0px rgb(6, 4, 18));
     height: 50px;
     margin-top: 25px;
-    /* background-color: aqua; */
     display: none;
 }
 #btn-project {
@@ -693,6 +645,8 @@ header {
     cursor: pointer;
     display: flex;
     padding: 6px;
+    padding-left: 8px;
+    padding-top: 7px;
     background-color: #55198b;
 }
 #btn-project:hover {
@@ -711,6 +665,8 @@ header {
     cursor: pointer;
     display: flex;
     padding: 6px;
+    padding-left: 8px;
+    padding-top: 7px;
     background-color: #55198b;
 }
 
@@ -730,7 +686,6 @@ footer {
     display: flex;
     margin: auto;
     padding-top: 40px;
-    /* background-color: aqua; */
 }
 
 .footer-left {

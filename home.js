@@ -23,14 +23,27 @@ document.getElementById('switch').addEventListener("click",f1)
         document.getElementById('project-box1').classList.toggle('project-box1-slide');
         document.getElementById('navbar').classList.toggle('project-box1-slide');
         document.getElementById('big-box1').classList.toggle('project-box1-slide');
-        
     }
+
     function menu(){
         document.getElementById('menu-nav').classList.toggle('menu-nav-slide');
     }
+
     function back(){
         document.getElementById('menu-nav').classList.toggle('menu-nav-slide');
     }
+
+    window.addEventListener("scroll", scrolltop);
+    function scrolltop() {
+        const scrollButton = document.getElementById("scroll");
+        if (window.scrollY >= 200) { 
+            scrollButton.style.display = "block";
+        } 
+        else {
+            scrollButton.style.display = "none";
+        }
+    }
+
     document.getElementById('btn').addEventListener("click", f2)
     function f2(){
         document.getElementById('btn-div').style.display="none";
@@ -42,6 +55,7 @@ document.getElementById('switch').addEventListener("click",f1)
             a[i].style.display="flex";
         }
     }
+
     document.getElementById('btn1').addEventListener("click", f3)
     function f3(){
         document.getElementById('btn-div').style.display="block";
@@ -50,9 +64,9 @@ document.getElementById('switch').addEventListener("click",f1)
         for(i=0;i<a.length;i++)
         {
             a[i].style.display="none";
-            // a[i].style.display="flex";
         }
     }
+
     document.getElementById('btn-project').addEventListener("click", f4)
     function f4(){
         document.getElementById('');
@@ -65,6 +79,7 @@ document.getElementById('switch').addEventListener("click",f1)
             a[i].style.display="flex";
         }
     }
+
     document.getElementById('btn1-project').addEventListener("click", f5)
     function f5(){
         document.getElementById('btn-project-div').style.display="block";
@@ -73,20 +88,8 @@ document.getElementById('switch').addEventListener("click",f1)
         for(i=0;i<a.length;i++)
         {
             a[i].style.display="none";
-            // a[i].style.display="flex";
         }
         
-    }
-
-    window.addEventListener("scroll", scrolltop);
-    function scrolltop() {
-        const scrollButton = document.getElementById("scroll");
-        if (window.scrollY >= 200) { 
-            scrollButton.style.display = "block";
-        } 
-        else {
-            scrollButton.style.display = "none";
-        }
     }
 
     /*var prevscroll=0;
@@ -103,12 +106,6 @@ document.getElementById('switch').addEventListener("click",f1)
         }
         prevscroll=currentscroll;
     }*/
-
-    /*const aboutmyself= document.querySelector('.about-myself');
-
-    document.querySelector('.about-link').addEventListener("click", () => {
-        aboutmyself.scrollIntoView({ behavior: "smooth" });
-    }); */
 
     function f12(){
         window.scrollTo({ top: 0, behavior: 'smooth' });
