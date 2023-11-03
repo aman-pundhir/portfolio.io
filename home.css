@@ -103,13 +103,12 @@ header {
     align-items: center;
     position: absolute;
     right: 30px;
-    top: 1px;
+    /* top: 1px; */
     height: 70px;
-    /* background-color: aqua; */
     display: none;
 }
 .menu-icon>span {
-    font-size: 3em;
+    font-size: 3.3em;
     cursor: pointer;
 }
 
@@ -231,12 +230,13 @@ header {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+    /* margin-right: 200px; */
     width: 350px;
     height: 350px;
     overflow: hidden;
 }
 
-.des h1 {
+#des-h1 {
     color: #55198b;
     margin-left: 350px;
     transition: all 3s ease;
@@ -244,14 +244,13 @@ header {
     font-style: italic;
 }
 
-.des>h2 {
+#des-h2 {
     color: #55198b;
     margin-left: 350px;
     transition: all 3s ease;
     font-size: 1.5em;
     padding-top: 10px;
     font-style: italic;
-
 }
 
 #span-h1 {
@@ -286,10 +285,10 @@ header {
 }
 
 .contact-hsection {
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
-.contact-hsection>img {
+.hero-section-img{
     height: 35px;
     width: 35px;
     margin-left: 5px;
@@ -297,7 +296,7 @@ header {
     transition: all 0.5s ease;
 }
 
-.contact-hsection>img:hover {
+.hero-section-img:hover {
     transform: translateY(-10px)
 }
 
@@ -751,7 +750,7 @@ footer {
     margin-top: 20px;
 }
 
-.social-media>img {
+.footer-social-img {
     height: 40px;
     width: 40px;
     margin-left: 10px;
@@ -760,7 +759,7 @@ footer {
     cursor: pointer;
 }
 
-.social-media>img:hover {
+.footer-social-img:hover {
     transform: translateY(-10px)
 }
 

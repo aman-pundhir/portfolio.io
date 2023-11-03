@@ -34,30 +34,24 @@
     }
 
     
-    .des h1 {
+    #des-h1 {
         margin-left: 500px;
         font-size: 1.4em;
     }
 
-    .des h2 {
+    #des-h2 {
         margin-left: 500px;
         font-size: 1em;
     }
 
     .des button {
         font-size: 0.6em;
-        margin-top: 5vh;
-        padding: 10px;
         padding-left: 3px;
         padding-right: 3px;
-        border: none;
-        border-radius: 5px;
-        background-color: #55198b;
-        cursor: pointer;
-        transition: all .7s ease;
+        margin-top: 3vh;
     }
 
-    .contact-hsection>img {
+    .hero-section-img {
         height: 25px;
         width: 25px;
         margin-left: 5px;
@@ -137,7 +131,7 @@
         margin-left: 0px;
     }
 
-    .social-media>img {
+    .footer-social-img {
         height: 40px;
         width: 40px;
         margin-right: 10px;
@@ -157,14 +151,10 @@
 
     .my-name{
         width: 40%;
-        margin-right: 50px;
-        margin-left: 10px;
-        top: 0;
-        margin-top: 10px;
     }
     .my-name>h1 {
         font-size: 1.5em;
-        padding-bottom: 20px;
+        padding-bottom: 1 0px;
     }
     .other-navbar{
         width: 80%;
@@ -179,17 +169,17 @@
         font-weight: lighter;
     }
 
-    .des>h1 {
+    #des-h1 {
         font-size: 1.7em;
     }
 
-    .des>h2 {
+    #des-h2 {
         font-size: 1.2em;
     }
 
     .des button {
         font-size: 0.8em;
-        margin-top: 5vh;
+        margin-top: 3vh;
         padding: 10px;
         padding-left: 5px;
         padding-right: 5px;
@@ -215,7 +205,7 @@
 
     
     #hide {
-        display: block;
+        display: flex;
     }
     .footer-left {
         width: 42%;

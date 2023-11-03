@@ -20,7 +20,6 @@ document.getElementById('switch').addEventListener("click",f1)
         document.getElementById('hr-hr').classList.toggle('hr-switch');
         document.getElementById('hr-hr2').classList.toggle('hr-switch');
         document.getElementById('hr-hr3').classList.toggle('hr-switch');
-        document.getElementById('hr-hr4').classList.toggle('hr-switch');
         document.getElementById('hr-hr1').classList.toggle('hr-switch');
         document.getElementById('project-box1').classList.toggle('project-box1-slide');
         document.getElementById('navbar').classList.toggle('project-box1-slide');
