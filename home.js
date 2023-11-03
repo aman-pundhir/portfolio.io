@@ -4,6 +4,8 @@ function loa()
     document.getElementById('des-h2').style.marginLeft='0px';
     document.getElementById('navs').style.top='0px';
     document.getElementById('navbar').style.top='0px';
+    document.getElementById('hero-section-image').style.transform="translateY(0px)";
+
 }
 
 document.getElementById('switch').addEventListener("click",f1)
@@ -23,6 +25,7 @@ document.getElementById('switch').addEventListener("click",f1)
         document.getElementById('project-box1').classList.toggle('project-box1-slide');
         document.getElementById('navbar').classList.toggle('project-box1-slide');
         document.getElementById('big-box1').classList.toggle('project-box1-slide');
+        document.getElementById('btn-div').classList.toggle('bg-color');
     }
 
     function menu(){

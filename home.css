@@ -97,17 +97,20 @@ header {
     background-color: #55198b;
     color: white;
 }
-/* .menu-icon{
-    margin-right: 10px;
-    background-color: aqua;
-} */
-.menu-icon>span {
-    font-size: 3em;
+.menu-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 30px;
-    /* top: 1px; */
-    cursor: pointer;
+    top: 1px;
+    height: 70px;
+    /* background-color: aqua; */
     display: none;
+}
+.menu-icon>span {
+    font-size: 3em;
+    cursor: pointer;
 }
 
 .menu-nav {
@@ -258,7 +261,6 @@ header {
 #des-h2>span {
     color: white;
 }
-
 .des button {
     font-size: 1em;
     font-weight: bold;
@@ -300,10 +302,14 @@ header {
 }
 
 /* ------------------------Hero section Image----------------------- */
-
+.hero-section-image{
+    overflow: hidden;
+}
 .hero-section-image>img {
     width: 400px;
     height: 400px;
+    transition: 2s;
+    transform: translateY(250px);
 }
 
 /* -----------------------Scroll to top------------------- */
@@ -459,7 +465,7 @@ header {
     display: none;
     height: 50px;
     box-shadow: none;
-    background-color: rgb(6, 4, 18);
+    background-color: transparent;
     filter: drop-shadow(0px 0px 0px rgb(6, 4, 18));
 }
 
@@ -467,7 +473,7 @@ header {
     display: none;
     height: 50px;
     box-shadow: none;
-    background-color: rgb(6, 4, 18);
+    background-color: transparent;
     filter: drop-shadow(0px 0px 0px rgb(6, 4, 18));
 }
 
@@ -614,7 +620,7 @@ header {
 #btn-project-div{
     background: url();
     box-shadow: none;
-    background-color: rgb(6, 4, 18);
+    background-color: transparent;
     filter: drop-shadow(0px 0px 0px rgb(6, 4, 18));
     height: 50px;
     padding: auto;
@@ -627,7 +633,7 @@ header {
     justify-content: center;
     background: url();
     box-shadow: none;
-    background-color: rgb(6, 4, 18);
+    background-color: transparent;
     filter: drop-shadow(0px 0px 0px rgb(6, 4, 18));
     height: 50px;
     margin-top: 25px;
@@ -774,6 +780,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 20px;
     flex-wrap: wrap;
     font-weight: bold;
 }
