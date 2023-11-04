@@ -102,13 +102,13 @@ header {
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 30px;
+    right: 30px; 
     /* top: 1px; */
-    height: 70px;
+    height: 100%;
     display: none;
 }
 .menu-icon>span {
-    font-size: 3.3em;
+    font-size: 3em;
     cursor: pointer;
 }
 
@@ -204,11 +204,12 @@ header {
 }
 
 .bg-color {
-    background-color: rgb(141, 209, 245);
+    /* background-color: rgb(141, 209, 245); */
+    background-color: aliceblue;
 }
 
 .color-switch {
-    color: black;
+    color: black !important;
 }
 
 /* ------------------Hero Section--------------------------- */
@@ -253,7 +254,7 @@ header {
     font-style: italic;
 }
 
-#span-h1 {
+.span-h1 {
     color: white;
 }
 
@@ -261,8 +262,8 @@ header {
     color: white;
 }
 .des button {
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 0.8em;
+    /* font-weight: bold; */
     margin-top: 5vh;
     padding: 10px;
     padding-left: 15px;
@@ -271,6 +272,7 @@ header {
     border-radius: 5px;
     background-color: #55198b;
     cursor: pointer;
+    color: white;
     transition: all .7s ease;
 }
 
@@ -281,6 +283,7 @@ header {
 .des button:hover {
     background-color: white;
     transition: .5s;
+    color: #55198b;
     transform: translateY(-5px);
 }
 
@@ -428,6 +431,7 @@ header {
     flex-wrap: wrap;
     margin: auto;
     height: auto;
+    padding-bottom: 15px;
     justify-content: space-evenly;
 }
 
@@ -519,7 +523,9 @@ header {
     background-color: white;
     transform: translateY(-5px);
 }
-
+#hr-hr5{
+    display: none;
+}
 /* ----------------------My project------------------------- */
 
 .my-project {
@@ -711,7 +717,9 @@ footer {
     border-radius: 50%;
 
 }
-
+.footer-photo-background-slide{
+    filter: drop-shadow(blue 1px 1px 3px);
+}
 .footer-photo-background>img {
     width: 300px;
     margin-top: 90px;

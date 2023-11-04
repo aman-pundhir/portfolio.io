@@ -25,16 +25,17 @@
                         <li><a href="#my-project" id="nav-slide">Portfolio</a></li>
                         <li><a href="#footer-main">Contact</a></li>
                     </div>
-                    <div class="menu-section">
-                        <div class="menu-icon">
-                            <span onclick="menu()">≡</span>
-                        </div>
-
-                    </div>
+                    
                     <div class="box">
                         <div class="switch" id="switch" title="Click to change dark/white mode">
                             <div id="slide"></div>
                         </div>
+                    </div>
+                    <div class="menu-section">
+                        <div class="menu-icon" id="menu-icon">
+                            <span onclick="menu()">≡</span>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -50,7 +51,7 @@
 
             </div>
             <div class="des" id="des">
-                <p id="des-h1">Hi, I'm <span id="span-h1">Aman Pundhir</span></p>
+                <p id="des-h1">Hi, I'm <span id="span-h1" class="span-h1">Aman Pundhir</span></p>
                 <p id="des-h2">Java Full Stack Developer 🚀</p>
                 <div class="contact-hsection">
                     <a href="https://github.com/amanpundhir49" target="_blank"><img src="Images/github.png" alt="" class="hero-section-img"></a>
@@ -86,12 +87,12 @@
                 labore sapiente molestiae blanditiis aliquam officiis similique, aspernatur cupiditate vero dolor,
                 repudiandae hic a.</p><br><br>
         </section>
-        <hr id="hr-hr3">
+        <hr id="hr-hr4">
         <section class="what-i-do">
             <div class="what-i-do-image">
                 <img src="Images/Telecommuting-pana.png" alt="">
             </div>
-            <div class="what-i-do-text">
+            <div class="what-i-do-text" id="what-i-do-text">
                 <h1>What I Do</h1><br><br>
                 <p>
                     CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
@@ -107,7 +108,7 @@
         </section>
         <hr id="hr-hr2">
         <section class="my-skill" id="my-skill">
-            <div class="skill">
+            <div class="skill" id="skill">
                 <h1><span>My</span> Skill :-</h1><br><br>
             </div>
             <div class="big-box1" id="big-box1">
@@ -154,9 +155,9 @@
                     <button id="btn1">View Less</button>
                 </div>
             </div>
-        </section>
+        </section><hr id="hr-hr5">
         <section class="my-project" id="my-project">
-            <div class="project">
+            <div class="project" id="project">
                 <h1><span>My</span> Projects :-</h1><br><br>
             </div>
                 <div class="project-box1" id="project-box1">
@@ -215,7 +216,7 @@
         <footer id="footer-main">
 
             <div class="footer-left">
-                <div class="footer-photo-background">
+                <div class="footer-photo-background" id="footer-photo-background">
                     <img src="Images/ap png.png" alt="">
                 </div>
             </div>
@@ -228,10 +229,10 @@
                 <h3>Open for Opportunity : Yes</h3>
                 <div class="contact-social-media">
                     <div class="social-media">
-                        <a href="https://github.com/amanpundhir49" target="_blank"><img src="Images/git (1).png" alt="" class="footer-social-img"></a>
+                        <a href="https://github.com/amanpundhir49" target="_blank"><img src="Images/github.png" alt="" class="footer-social-img"></a>
                         <a href="https://www.linkedin.com/in/aman-pundhir-/" target="_blank"><img src="Images/linkedin.png" alt="" class="footer-social-img"></a>
                         <a href="mailto:amanpundhir49@gmail.com" target="_blank"><img src="Images/gmail.png" alt="" class="footer-social-img"></a>
-                        <a href="https://www.facebook.com/Amanpundhir49/" target="_blank"><img src="Images/facebook.png" alt="" class="footer-social-img">
+                        <a href="https://www.facebook.com/Amanpundhir49/" target="_blank"><img src="Images/facebook.png" alt="" class="footer-social-img"></a>
                         <a href="https://www.youtube.com/@AmanPundhir" target="_blank"><img src="Images/youtube.png" alt="" class="footer-social-img"></a>
                         <a href="https://twitter.com/amanpundhir49" target="_blank"><img src="Images/twitter.png" alt="" class="footer-social-img"></a>
                         <a href="https://www.instagram.com/aman__pundhir/" target="_blank"><img src="Images/instagram.png" alt="" class="footer-social-img"></a>
@@ -240,7 +241,7 @@
             </div>
         </footer>
         <hr id="hr-hr1">
-        <div class="copy">Made with ❤️ by Aman Pundhir || &copy; All Copyright right reserved</div>
+        <div class="copy" id="copy">Made with ❤️ by Aman Pundhir || &copy; All Copyright right reserved</div>
     </div>
 
     <script src="home.js"></script>

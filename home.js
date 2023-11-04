@@ -15,17 +15,57 @@ document.getElementById('switch').addEventListener("click",f1)
         document.getElementById('navbar').classList.toggle('bg-color');
         document.getElementById('navs').classList.toggle('bg-color');
         document.getElementById('main').classList.toggle('bg-color');
-        document.getElementById('span-h1').classList.toggle('color-slide1');
-        document.getElementById('span-h1').classList.toggle('color-switch');
         document.getElementById('hr-hr').classList.toggle('hr-switch');
         document.getElementById('hr-hr2').classList.toggle('hr-switch');
         document.getElementById('hr-hr3').classList.toggle('hr-switch');
+        document.getElementById('hr-hr4').classList.toggle('hr-switch');
         document.getElementById('hr-hr1').classList.toggle('hr-switch');
+        document.getElementById('hr-hr5').classList.toggle('hr-switch');
         document.getElementById('project-box1').classList.toggle('project-box1-slide');
         document.getElementById('navbar').classList.toggle('project-box1-slide');
         document.getElementById('big-box1').classList.toggle('project-box1-slide');
-        document.getElementById('btn-div').classList.toggle('bg-color');
+        document.getElementById('name-slide').classList.toggle('color-slide');
+        document.getElementById('about-myself').classList.toggle('color-slide');
+        document.getElementById('what-i-do-text').classList.toggle('color-slide');
+        document.getElementById('footer-main').classList.toggle('color-slide');
+        document.getElementById('copy').classList.toggle('color-slide');
+        document.getElementById('skill').classList.toggle('color-slide');
+        document.getElementById('project').classList.toggle('color-slide');
+        document.getElementById('menu-icon').classList.toggle('color-slide');
+        document.getElementById('span-h1').classList.toggle('color-switch');
+        document.getElementById('footer-photo-background').classList.toggle('footer-photo-background-slide');
+        // document.getElementById('span-h1').style.color='black';
+
+        // ----------------------description button--------------
+
+        document.getElementById('contact-btn').addEventListener("mouseover", f6)
+        function f6(){
+            document.getElementById('contact-btn').style.cssText="filter: drop-shadow(#55198b 2px 2px 7px)";
+        }
+        document.getElementById('contact-btn').addEventListener("mouseleave", f7)
+        function f7(){
+            document.getElementById('contact-btn').style.boxShadow='none';
+            document.getElementById('contact-btn').style.cssText="filter: drop-shadow(none)";
+        }
+        document.getElementById('resume-btn').addEventListener("mouseover", f8)
+        function f8(){
+            document.getElementById('resume-btn').style.cssText="filter: drop-shadow(#55198b 2px 2px 7px)";
+        }
+        document.getElementById('resume-btn').addEventListener("mouseleave", f9)
+        function f9(){
+            document.getElementById('resume-btn').style.boxShadow='none';
+            document.getElementById('resume-btn').style.cssText="filter: drop-shadow(none)";
+        }
+
+        const an= document.querySelectorAll('a');
+        for(i=1; i<=a.length; i++)
+        {
+            an.classList.toggle('color-slide');
+        }
     }
+
+
+    // -----------------hide menu nav------------------
 
     function menu(){
         document.getElementById('menu-nav').classList.toggle('menu-nav-slide');
@@ -45,6 +85,8 @@ document.getElementById('switch').addEventListener("click",f1)
             scrollButton.style.display = "none";
         }
     }
+
+    // ------------------------hide btn skill project-------------------------
 
     document.getElementById('btn').addEventListener("click", f2)
     function f2(){

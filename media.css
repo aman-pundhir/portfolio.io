@@ -49,6 +49,7 @@
         padding-left: 3px;
         padding-right: 3px;
         margin-top: 3vh;
+        font-weight: bold;
     }
 
     .hero-section-img {
@@ -97,6 +98,10 @@
     }
 
     #btn-div{
+        display: block;
+    }
+
+    #hr-hr5{
         display: block;
     }
 
