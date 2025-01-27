@@ -8,11 +8,13 @@ html,
 body {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
-    background-color: rgb(6, 4, 18);
+    /* background-color: rgb(6, 4, 18); */
+    background-color: #171c28;
 }
 
 .main {
-    background-color: rgb(6, 4, 18);
+    /* background-color: rgb(6, 4, 18); */
+    background-color: #171c28;
     font-family: sans-serif;
     color: white;
     overflow: hidden;
@@ -33,14 +35,15 @@ header {
     top: -100px;
     padding-top: 20px;
     overflow: hidden;
-    filter: drop-shadow(2px 2px 3px blue);
+    /* filter: drop-shadow(2px 2px 3px blue); */
     transition: all 0.5s ease;
 }
 
 .navs {
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(6, 4, 18);
+    /* background-color: rgb(6, 4, 18); */
+    background-color: #171c28;
     width: 100vw;
     position: absolute; 
     top: -100px;
@@ -59,7 +62,8 @@ header {
 }
 
 .my-name>h1>span {
-    color: #55198b;
+    /* color: #55198b; */
+    color: cornflowerblue;
 }
 .other-navbar{
     display: flex;
@@ -88,13 +92,14 @@ header {
     padding-top: 5px;
     padding-bottom: 5px;
     right: 20px;
-    color: #55198b;
+    color: white;
     border-radius: 20px;
     transition: all 0.3s ease;
 }
 
 .nav>li>a:hover {
-    background-color: #55198b;
+    /* background-color: cornflowerblue; */
+    filter: drop-shadow(2px 2px 3px white);
     color: white;
 }
 .menu-icon{
@@ -167,6 +172,9 @@ header {
     right: 30px;
     top: 19px;
 }
+.box-switch{
+    background-color: cornflowerblue !important;
+}
 
 .switch {
     display: flex;
@@ -205,7 +213,7 @@ header {
 
 .bg-color {
     /* background-color: rgb(141, 209, 245); */
-    background-color: aliceblue;
+    background-color: white;
 }
 
 .color-switch {
@@ -216,7 +224,7 @@ header {
 
 .hero-section {
     width: 100%;
-    margin-top: 70px;
+    margin-top: 90px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -238,7 +246,7 @@ header {
 }
 
 #des-h1 {
-    color: #55198b;
+    /* color: cornflowerblue; */
     margin-left: 350px;
     transition: all 3s ease;
     font-size: 2.1em;
@@ -246,12 +254,15 @@ header {
 }
 
 #des-h2 {
-    color: #55198b;
+    /* color: cornflowerblue; */
     margin-left: 350px;
     transition: all 3s ease;
     font-size: 1.5em;
     padding-top: 10px;
     font-style: italic;
+}
+.switch-transition{
+    transition: all .3s ease;
 }
 
 .span-h1 {
@@ -270,7 +281,7 @@ header {
     padding-right: 15px;
     border: none;
     border-radius: 5px;
-    background-color: #55198b;
+    background-color: cornflowerblue;
     cursor: pointer;
     color: white;
     transition: all .7s ease;
@@ -283,7 +294,7 @@ header {
 .des button:hover {
     background-color: white;
     transition: .5s;
-    color: #55198b;
+    color: cornflowerblue;
     transform: translateY(-5px);
 }
 
@@ -347,12 +358,18 @@ header {
 
 .profile-summary>h1 {
     font-weight: bolder;
-    font-size: 2em;
+    font-size: 2.2em;
+    text-decoration: underline cornflowerblue;
+    text-underline-offset: 15px;
+    padding-bottom: 10px;
 }
-
-.profile-summary>h1>span {
+.profile-summary>h1>img{
+    height: 25px;
+    width: 25px;
+}
+/* .profile-summary>h1>span {
     text-decoration: underline red;
-}
+} */
 
 .about-myself>p {
     padding-left: 30px;
@@ -413,16 +430,23 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 .skill>h1 {
     font-weight: bolder;
     font-size: 2em;
+    text-decoration: underline cornflowerblue;
+    text-underline-offset: 15px;
+    padding-bottom: 8px;
 }
-
-.skill>h1>span {
+.skill>h1>img{
+    height: 35px;
+    width: 35px;
+}
+/* .skill>h1>span {
     text-decoration: underline red;
-}
+} */
 
 /* -------------------My skill Div---------------------- */
 
@@ -446,13 +470,14 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    filter: drop-shadow(2px 2px 3px blue);
+    filter: drop-shadow(2px 2px 3px cornflowerblue);
 }
 
 .big-box1>div:hover {
     transform: scale(1.1);
-    filter: drop-shadow(2px 2px 5px blue);
-
+    transition: all ease 0.4s;
+    filter: drop-shadow(2px 2px 7px blue);
+    background-image: linear-gradient(red,orange,tomato,yellow);
 }
 
 .big-box1>div>img {
@@ -494,7 +519,7 @@ header {
     padding: 6px;
     padding-left: 8px;
     padding-top: 7px;
-    background-color: #55198b;
+    background-color: cornflowerblue;
 }
 
 #btn:hover {
@@ -516,7 +541,7 @@ header {
     padding: 6px;
     padding-left: 8px;
     padding-top: 7px;
-    background-color: #55198b;
+    background-color: cornflowerblue;
 }
 
 #btn1:hover {
@@ -539,16 +564,26 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .project>h1 {
     font-weight: bolder;
     font-size: 2em;
+    text-decoration: underline cornflowerblue;
+    text-underline-offset: 15px;
+    padding-bottom: 8px;
+}
+.project>h1>img{
+    height: 30px;
+    width: 30px;
+    /* padding-top: 3px; */
 }
 
-.project>h1>span {
+/* .project>h1>span {
     text-decoration: underline red;
-}
+} */
 
 .project-box1 {
     display: flex;
@@ -570,20 +605,23 @@ header {
     flex-direction: column;
     background: url(Images/screenshot.png);
     background-size: contain;
-    filter: drop-shadow(2px 2px 3px blue);
+    /* filter: drop-shadow(2px 2px 3px blue); */
+    box-shadow: 0px 1px 10px rgba(100, 149, 237, 5);
     background-repeat: repeat;
     overflow: hidden;
 }
 
 .project-box1>div:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(2px 2px 4px blue);
+    transform: scale(1.02);
+    /* filter: drop-shadow(2px 2px 4px blue); */
+    box-shadow: 0px 4px 15px rgba(100, 149, 237, 5);
+    transition: all ease 0.3s;
 }
 
 
 
 .project-box1-slide {
-    filter: drop-shadow(3px 3px 4px blue);
+    filter: drop-shadow(3px 3px 4px cornflowerblue);
 }
 
 .project-hover {
@@ -658,7 +696,7 @@ header {
     padding: 6px;
     padding-left: 8px;
     padding-top: 7px;
-    background-color: #55198b;
+    background-color: cornflowerblue;
 }
 #btn-project:hover {
     background-color: white;
@@ -678,7 +716,7 @@ header {
     padding: 6px;
     padding-left: 8px;
     padding-top: 7px;
-    background-color: #55198b;
+    background-color: cornflowerblue;
 }
 
 #btn1-project:hover {
@@ -737,7 +775,7 @@ footer {
     height: 33px;
     width: 200px;
     border-radius: 20px;
-    border: 2px solid #55198b;
+    border: 2px solid cornflowerblue;
     background-color: black;
 }
 
@@ -790,4 +828,7 @@ hr {
     padding-top: 20px;
     flex-wrap: wrap;
     font-weight: bold;
+}
+.bt-div:hover{
+    background-color: aqua;
 }

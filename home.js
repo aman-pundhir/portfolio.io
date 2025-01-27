@@ -22,7 +22,7 @@ document.getElementById('switch').addEventListener("click",f1)
         document.getElementById('hr-hr1').classList.toggle('hr-switch');
         document.getElementById('hr-hr5').classList.toggle('hr-switch');
         document.getElementById('project-box1').classList.toggle('project-box1-slide');
-        document.getElementById('navbar').classList.toggle('project-box1-slide');
+        // document.getElementById('navbar').classList.toggle('project-box1-slide');
         document.getElementById('big-box1').classList.toggle('project-box1-slide');
         document.getElementById('name-slide').classList.toggle('color-slide');
         document.getElementById('about-myself').classList.toggle('color-slide');
@@ -32,7 +32,14 @@ document.getElementById('switch').addEventListener("click",f1)
         document.getElementById('skill').classList.toggle('color-slide');
         document.getElementById('project').classList.toggle('color-slide');
         document.getElementById('menu-icon').classList.toggle('color-slide');
+        document.getElementById('nav-slide1').classList.toggle('color-switch');
+        document.getElementById('nav-slide').classList.toggle('color-switch');
+        document.getElementById('nav-slide2').classList.toggle('color-switch');
+        document.getElementById('nav-slide3').classList.toggle('color-switch');
+        document.getElementById('des-h1').classList.toggle('color-switch');
+        document.getElementById('des-h2').classList.toggle('color-switch');
         document.getElementById('span-h1').classList.toggle('color-switch');
+
         document.getElementById('footer-photo-background').classList.toggle('footer-photo-background-slide');
         // document.getElementById('span-h1').style.color='black';
 
